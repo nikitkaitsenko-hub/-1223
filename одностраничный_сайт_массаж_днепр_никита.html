@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Прайс на массаж Днепр — выезд на дом | Никита, врач-анестезиолог</title>
+  <meta name="description" content="Профессиональный массаж с выездом на дом по Днепру. Врач-анестезиолог, сертифицированный массажист. Скидка 20% для переселенцев. Звоните: 095-37-58-120." />
+  <meta property="og:title" content="Массаж Днепр — выезд на дом" />
+  <meta property="og:description" content="Профессиональный массаж у вас дома. Скидка 20% для переселенцев." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Massage+Dnipro" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#F8F6F3; --text:#2B2A29; --muted:#6A6967; --accent:#2E7D32; --accent-2:#1B5E20; --card:#FFFFFF; --line:#E7E3DC; --danger:#B00020;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,100%);margin:0 auto;padding:24px}
+    /* Header */
+    header{position:sticky;top:0;background:rgba(248,246,243,.8);backdrop-filter: blur(8px);border-bottom:1px solid var(--line);z-index:20}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--accent)}
+    .cta{display:flex;gap:10px;align-items:center}
+    .btn{padding:12px 18px;border-radius:16px;border:1px solid var(--line);background:var(--card);box-shadow:0 2px 8px rgb(0 0 0 / 6%);font-weight:600}
+    .btn--accent{background:var(--accent);color:#fff;border-color:var(--accent-2)}
+    .btn--ghost{background:transparent}
+    /* Hero */
+    .hero{padding:56px 0}
+    .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+    .hero h1{font-size:clamp(28px,6vw,48px);line-height:1.06;margin:0 0 12px;font-weight:800}
+    .hero p{color:var(--muted);font-size:clamp(14px,2.4vw,18px)}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:#E9F5EB;color:var(--accent-2);padding:10px 14px;border-radius:999px;font-weight:700;margin:14px 0}
+    .hero .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 10px 30px rgb(0 0 0 / 6%)}
+    .hero-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0}
+    .hero-list li{background:#fff;border:1px dashed var(--line);padding:12px;border-radius:12px}
+    /* Prices */
+    section{padding:48px 0}
+    .section-title{font-size:clamp(22px,3.6vw,34px);font-weight:800;margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 8px 20px rgb(0 0 0 / 5%)}
+    .price{display:flex;align-items:baseline;gap:10px;margin-top:10px}
+    .old{position:relative;color:var(--muted);font-weight:600}
+    .old::after{content:"";position:absolute;left:-2px;right:-2px;top:50%;height:2px;background:var(--danger);transform:rotate(-4deg)}
+    .new{font-size:28px;font-weight:800;color:var(--accent-2)}
+    .note{color:var(--muted);font-size:14px}
+    .banner{display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:16px;padding:14px 16px;font-weight:800}
+    /* Benefits */
+    .benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .benefit{padding:18px;border-radius:16px;border:1px solid var(--line);background:#fff}
+    /* Reviews */
+    .reviews{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .review{padding:18px;border-radius:16px;border:1px solid var(--line);background:#fff}
+    .stars{letter-spacing:2px}
+    /* FAQ */
+    details{border:1px solid var(--line);padding:14px;border-radius:14px;background:#fff}
+    details + details{margin-top:10px}
+    summary{cursor:pointer;font-weight:700}
+    /* Footer */
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted)}
+    .contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .contact a{display:inline-flex;align-items:center;gap:8px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero .wrap{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .benefits,.reviews{grid-template-columns:1fr}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Массаж Днепр — Никита",
+    "areaServed": "Dnipro",
+    "priceRange": "₴₴",
+    "telephone": "+380953758120",
+    "url": "https://example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Днепр",
+      "addressCountry": "UA"
+    },
+    "sameAs": ["https://t.me/nk_massage_dnepr"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> Массаж Днепр</div>
+      <div class="cta">
+        <a class="btn btn--ghost" href="#prices">Прайс</a>
+        <a class="btn" href="#benefits">Польза</a>
+        <a class="btn btn--accent" href="tel:+380953758120">Позвонить</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container wrap">
+        <div>
+          <div class="badge">Скидка для переселенцев −20% на все виды массажа</div>
+          <h1>Прайс на массаж Днепр<br/>Выезд на дом с массажным столом</h1>
+          <p>Я — Никита, врач анестезиолог‑реаниматолог и сертифицированный массажист с высшим мед. образованием. Более 3 лет помогаю убирать боль, напряжение и усталость.</p>
+          <ul class="hero-list">
+            <li>Работаю по всему Днепру (правый и левый берег)</li>
+            <li>Безопасно и по‑медицински: сбор анамнеза, противопоказания</li>
+            <li>Одноразовые простыни, бережные и эффективные техники</li>
+            <li>Оплата наличными/переводом</li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn--accent" href="https://t.me/nk_massage_dnepr" target="_blank" rel="noopener">Записаться в Telegram</a>
+            <a class="btn" href="tel:+380953758120">Позвонить: 095‑37‑58‑120</a>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Что даст массаж?</strong>
+          <ul>
+            <li>Снимет боли и зажимы (спина, шея, поясница, ноги)</li>
+            <li>Улучшит сон, настроение и концентрацию</li>
+            <li>Поможет восстановиться после стресса и нагрузок</li>
+          </ul>
+          <p class="note">Индивидуально подбираю программу и интенсивность под ваш запрос.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices">
+      <div class="container">
+        <h2 class="section-title">Прайс и специальные программы</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Классический расслабляющий массаж спины + ШВЗ <span class="note">(45 мин)</span></h3>
+            <div class="price">
+              <span class="old">900 грн</span>
+              <span class="new">720 грн</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Классический расслабляющий массаж всего тела <span class="note">(70 мин)</span></h3>
+            <div class="price">
+              <span class="old">1050 грн</span>
+              <span class="new">840 грн</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Лечебно‑профилактический массаж спины + ШВЗ <span class="note">(45 мин)</span></h3>
+            <div class="price">
+              <span class="old">1000 грн</span>
+              <span class="new">800 грн</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Лечебно‑профилактический массаж всего тела + ШВЗ + массаж головы <span class="note">(70 мин)</span></h3>
+            <div class="price">
+              <span class="old">1200 грн</span>
+              <span class="new">960 грн</span>
+            </div>
+          </article>
+        </div>
+        <div class="banner" style="margin-top:16px;">Скидка для переселенцев −20% на все виды массажа</div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают меня</h2>
+        <div class="benefits">
+          <div class="benefit"><strong>Врач</strong><br/><span class="note">Медицинский подход, безопасность и этика.</span></div>
+          <div class="benefit"><strong>Выезд с оборудованием</strong><br/><span class="note">Привожу массажный стол и расходники.</span></div>
+          <div class="benefit"><strong>Индивидуально</strong><br/><span class="note">Подбираю техники под цель: боль/расслабление/восстановление.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <div class="reviews">
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            «После сеанса ушла боль в пояснице, сплю как ребёнок. Спасибо!»
+            <div class="note">— Анна</div>
+          </div>
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            «Приехал вовремя, аккуратно, без лишней боли. Рекомендую!»
+            <div class="note">— Игорь</div>
+          </div>
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            «Курс из 5 сеансов отлично помог после тренировок.»
+            <div class="note">— Марина</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2 class="section-title">Частые вопросы</h2>
+        <details>
+          <summary>Как проходит выездной сеанс?</summary>
+          <p>Приезжаю с массажным столом и расходниками. Вы выделяете 4–5 м² свободного места. Перед началом кратко обсуждаем самочувствие и противопоказания.</p>
+        </details>
+        <details>
+          <summary>Нужна подготовка?</summary>
+          <p>Желательно не плотно кушать за 1–1.5 часа. Подготовьте полотенце/душ при желании. Всё остальное привезу я.</p>
+        </details>
+        <details>
+          <summary>Работаете каждый день?</summary>
+          <p>Да, по предварительной записи. Днепр: правый и левый берег.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <h3 style="margin:0 0 8px">Контакты</h3>
+      <div class="contact">
+        <a class="btn btn--accent" href="https://t.me/nk_massage_dnepr" target="_blank" rel="noopener">Написать в Telegram</a>
+        <a class="btn" href="tel:+380953758120">Позвонить: 095‑37‑58‑120</a>
+        <a class="btn" href="https://maps.google.com/?q=Dnipro" target="_blank" rel="noopener">Работаю по всему Днепру</a>
+      </div>
+      <p class="note">© <span id="year"></span> Никита — профессиональный массаж с выездом на дом. Не является медицинской услугой в смысле диагностики/лечения заболеваний. При наличии хронических болезней проконсультируйтесь с врачом.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
